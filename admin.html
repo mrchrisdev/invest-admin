@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest | Admin</title>
+    <link rel="icon" type="image/x-icon" href="invest-asset/logo.png">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Admin page header -->
+    <header class="admin-header">
+        <div>
+            <p class="eyebrow">Invest administration</p>
+            <h1>Registered users</h1>
+        </div>
+        <a href="invest-first__page.html">Back to site</a>
+    </header>
+
+    <!-- Registered users section -->
+    <main class="admin-content">
+        <div class="admin-summary">
+            <span>Total accounts</span>
+            <strong id="userCount">0</strong>
+        </div>
+        <p class="admin-status" id="adminStatus" role="status"></p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>BTC</th>
+                        <th>ETH</th>
+                        <th>LTC</th>
+                        <th>DOGE</th>
+                        <th>Registered</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Pending approval requests -->
+        <h2 class="admin-section-title">Pending approvals</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Request</th>
+                        <th>Details</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="requestsTableBody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Admin page interactions -->
+    <script src="admin.js"></script>
+</body>
+</html>
